@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>LeanEngine</title>
+    <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+    test();
+      function test() {
+        
+      $.ajax({
+           type: "POST",
+           url: 'user/login',
+           data: {userName:'nihaoc11sar',passWord:'nihao'},
+           dataType: "json",
+           success : function(result) {
+               console.log(result);
+           },
+           error : function(){
+            console.log("出错");
+           }
+       });
+    }
+    // function test() {
+        
+    //   $.ajax({
+    //        type: "POST",
+    //        url: 'user/signUp',
+    //        data: {userName:'nihaoc11sar',passWord:'nihao',birth:'111',sex:'nan',area:'dad'},
+    //        dataType: "json",
+    //        success : function(result) {
+    //            console.log(result);
+    //        },
+    //        error : function(){
+    //         console.log("出错");
+    //        }
+    //    });
+    // }
+    </script>
+  </body>
+</html>
